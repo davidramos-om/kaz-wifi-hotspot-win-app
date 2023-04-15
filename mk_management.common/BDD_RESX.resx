@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aaa_base" xml:space="preserve">
+    <value>CREATE TABLE `aaa_base` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla Base : Id = 20190613_2133_1020'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;</value>
+  </data>
+  <data name="app_setting" xml:space="preserve">
+    <value>CREATE TABLE `app_setting` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Config` LONGTEXT NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla Base : Id = 20190613_2133_1020'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="app_setting_data" xml:space="preserve">
+    <value>REPLACE INTO `app_setting` (`Id`, `AppId`, `AppVersion`, `PcHost`, `UsuarioCreo`, `Config`, `FechaCreo`, `FechaElimino`, `UsuarioElimino`, `Activo`, `Token`) VALUES
+	('20200213_014602_0646', '@AppId', '@AppVersion', '@PcHost', '@Usuario', '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', NOW(), NULL, NULL, b'1', 'Gk736b9mFopq/Gafcm8g2Ko+DZAqkH7zuuOkjffv2NJ+QZWXO1jrbnob08GVFeTzaEYlmb7pF+q0NNp8t74Wgk8Xs5a2HXQDMQ2WyEsyeYe6K9mbDTqSUithQHHFO4ts');</value>
+  </data>
+  <data name="bitacora_sistema" xml:space="preserve">
+    <value>CREATE TABLE `bitacora_sistema` (
+	`Id` INT(11) NOT NULL AUTO_INCREMENT,
+	`Titulo` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Observacion` TEXT NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`EsError` BIT(1) NULL DEFAULT NULL,
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla de Bitacora de Cambios /Errores del Sistema'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+AUTO_INCREMENT=9644
+;</value>
+  </data>
+  <data name="crear_bdd" xml:space="preserve">
+    <value>CREATE DATABASE IF NOT EXISTS `@bdd`;
+USE `@bdd`;</value>
+  </data>
+  <data name="formatos_rpt" xml:space="preserve">
+    <value>CREATE TABLE `formatos_rpt` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`Nombre` VARCHAR(200) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Codigo` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Formato` LONGBLOB NULL DEFAULT NULL,
+	`Impresora` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla Base : Id = 20190613_2133_1020\r\nAlmacena virtualmente los formatos de reportes o impresiones'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="perfil_hotspot" xml:space="preserve">
+    <value>CREATE TABLE `perfil_hotspot` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`IdServer` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Descripcion` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Kb_Descarga` INT(11) NULL DEFAULT NULL,
+	`Kb_Subida` INT(11) NULL DEFAULT NULL,
+	`Minutos` INT(11) NULL DEFAULT NULL,
+	`HP_Id` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla Base : Id = 20190613_2133_1020 Bitacora de Perfiles creados en el hotSpot'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="perfil_sistema" xml:space="preserve">
+    <value>CREATE TABLE `perfil_sistema` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`Nombre` VARCHAR(100) NOT NULL COLLATE 'utf8_general_ci',
+	`FormulariosAcceso` LONGTEXT NOT NULL COLLATE 'utf8mb4_bin',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla Base : Id = 20190613_2133_1020  Perfiles de Sistemas'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="perfil_sistema_data" xml:space="preserve">
+    <value>INSERT INTO `perfil_sistema` (`Id`, `Nombre`, `FormulariosAcceso`, `AppId`, `AppVersion`, `PcHost`, `UsuarioCreo`, `FechaCreo`, `FechaElimino`, `UsuarioElimino`, `Token`, `Activo`) VALUES ('20190624_232737_0698', 'Admin', '[\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceAppSetting",\r\n    "Descripcion": "   Conexión base de datos"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceDispositivos",\r\n    "Descripcion": "   Conexión Router"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "acePerfilesSistema",\r\n    "Descripcion": "   Perfiles de Sistema"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceUsuariosSistema",\r\n    "Descripcion": "   Usuarios de Sistema"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "acePlantillaLoginWeb",\r\n    "Descripcion": "   Plantilla Sitio Web"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceEliminarUsuarios",\r\n    "Descripcion": "   Eliminar Usuario"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceEliminarCookies",\r\n    "Descripcion": "   Eliminar Cokie"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceFormatoImpresion",\r\n    "Descripcion": "   Formato Impresión"\r\n  }\r\n]', '@AppId', '@AppVersion', '@PcHost', '@Usuario', NOW(), NULL, NULL, NULL, b'1');
+INSERT INTO `perfil_sistema` (`Id`, `Nombre`, `FormulariosAcceso`, `AppId`, `AppVersion`, `PcHost`, `UsuarioCreo`, `FechaCreo`, `FechaElimino`, `UsuarioElimino`, `Token`, `Activo`) VALUES ('20190625_123939_0194', 'Cajero', '[\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "acePerfilesInternet",\r\n    "Descripcion": "   Crear Perfiles"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceUsuariosInternet",\r\n    "Descripcion": "   Crear Usuarios"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceTablero",\r\n    "Descripcion": "   Tablero Informativo"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceUsuariosActivos",\r\n    "Descripcion": "   Usuarios en Dispositivo"\r\n  }\r\n]', '@AppId', '@AppVersion', '@PcHost', '@Usuario', NOW(), NULL, NULL, NULL, b'1');
+INSERT INTO `perfil_sistema` (`Id`, `Nombre`, `FormulariosAcceso`, `AppId`, `AppVersion`, `PcHost`, `UsuarioCreo`, `FechaCreo`, `FechaElimino`, `UsuarioElimino`, `Token`, `Activo`) VALUES ('20190625_124008_0279', 'Gerente', '[\r\n  {\r\n    "Seleccionar": true,\r\n    "Formulario": "aceTablero",\r\n    "Descripcion": "Tablero Informativo"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Formulario": "acePerfilesActivos",\r\n    "Descripcion": "Perfiles Activos"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Formulario": "aceHistorialPerfiles",\r\n    "Descripcion": "Historial de Perfiles"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Formulario": "aceUsuariosActivos",\r\n    "Descripcion": "Usuarios Activos"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Formulario": "aceHistorialUsuarios",\r\n    "Descripcion": "Historial de Usuarios"\r\n  }\r\n]', '@AppId', '@AppVersion', '@PcHost', '@Usuario', NOW(), NULL, NULL, NULL, b'1');
+INSERT INTO `perfil_sistema` (`Id`, `Nombre`, `FormulariosAcceso`, `AppId`, `AppVersion`, `PcHost`, `UsuarioCreo`, `FechaCreo`, `FechaElimino`, `UsuarioElimino`, `Token`, `Activo`) VALUES ('20190626_224822_0747', 'Super Usuario', '[\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceParametrosApp",\r\n    "Descripcion": "   Preferencias"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceLicencia",\r\n    "Descripcion": "   Licencia"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "acePerfilesSistema",\r\n    "Descripcion": "   Perfiles de Sistema"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceUsuariosSistema",\r\n    "Descripcion": "   Usuarios de Sistema"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceFormatoImpresion",\r\n    "Descripcion": "   Formato Impresión"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceDispositivos",\r\n    "Descripcion": "   Dispositivos de Red"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "acePerfilesInternet",\r\n    "Descripcion": "   Crear Perfiles"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceUsuariosInternet",\r\n    "Descripcion": "   Crear Usuarios"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceTablero",\r\n    "Descripcion": "   Tablero Informativo"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "acePerfilesActivos",\r\n    "Descripcion": "   Perfiles en Dispositivos"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceUsuariosActivos",\r\n    "Descripcion": "   Usuarios en Dispositivo"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceHistorialPerfiles",\r\n    "Descripcion": "   Historial de Perfiles"\r\n  },\r\n  {\r\n    "Seleccionar": true,\r\n    "Grupo": false,\r\n    "Formulario": "aceHistorialUsuarios",\r\n    "Descripcion": "   Historial de Usuarios"\r\n  }\r\n]', '@AppId', '@AppVersion', '@PcHost', '@Usuario', NOW(), NULL, NULL, NULL, b'1');</value>
+  </data>
+  <data name="routeros_usage_stats" xml:space="preserve">
+    <value>CREATE TABLE `routeros_usage_stats` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`ServerId` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`json_data` LONGTEXT NOT NULL COLLATE 'utf8mb4_bin',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla Base : Id = 20190613_2133_1020'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="server" xml:space="preserve">
+    <value>CREATE TABLE `server` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`Descripcion` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`IP` VARCHAR(30) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Puerto` SMALLINT(6) NULL DEFAULT NULL,
+	`Usuario` VARCHAR(2000) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Clave` VARCHAR(2000) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Predeterminado` CHAR(1) NULL DEFAULT 'N' COLLATE 'utf8_general_ci',
+	`OsVersion` VARCHAR(50) NULL DEFAULT '6.43' COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla para guardar de un router: Id = 20190613_2133_1020'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="sys_config" xml:space="preserve">
+    <value>CREATE TABLE `sys_config` (
+	`config` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`value` VARCHAR(500) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`value_bin` LONGBLOB NULL DEFAULT NULL,
+	`Activo` BIT(1) NULL DEFAULT b'1'
+)
+COMMENT='Configuraciones del programa'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="sys_config_data" xml:space="preserve">
+    <value>INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('COM_NAME', 'Kaz Wifi - Company', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo) VALUES('COM_DIR', '', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('COM_CONTACTS', 'info@kaz-wifi.com', NULL, 1);
+
+INSERT INTO sys_config (config, value, value_bin, Activo) VALUES('SYS_OPEN_DASH', '0', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('SYS_PRINT_USER_CRED_WIFI', '1', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('COM_LOGO', NULL, NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo) VALUES('COM_LOGO_SIZE_MODE', '5', NULL, 1);
+
+INSERT INTO sys_config (config, value, value_bin, Activo)VALUES('SYS_GEN_ROUTER_STATS', '1', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('SYS_PROXY_URL', '0.0.0.0', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('SYS_PROXY_PORT', '8000', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('SYS_PROXY_ENABLE', '0', NULL, 1);
+
+INSERT INTO sys_config(config, value, value_bin, Activo)VALUES('COM_RTN', '0000-0000-000001', NULL, 1);</value>
+  </data>
+  <data name="usuario_hotspot" xml:space="preserve">
+    <value>CREATE TABLE `usuario_hotspot` (
+	`Id` VARCHAR(25) NOT NULL COLLATE 'utf8_general_ci',
+	`IdServer` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`IdPerfil` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Usuario` VARCHAR(2000) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Clave` VARCHAR(2000) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Tiempo` INT(11) NULL DEFAULT NULL COMMENT 'Tiempo de Vigencia',
+	`TipoTiempo` CHAR(2) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Comentario` VARCHAR(2000) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`HP_Perfil` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`HP_Id` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Token` VARCHAR(300) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT NULL,
+	PRIMARY KEY (`Id`) USING BTREE
+)
+COMMENT='Tabla de usuarios para bitacora del hotspot'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="usuario_sistema" xml:space="preserve">
+    <value>CREATE TABLE `usuario_sistema` (
+	`Id` VARCHAR(30) NOT NULL COLLATE 'utf8_general_ci',
+	`Nombre` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Apellido` VARCHAR(50) NOT NULL COLLATE 'utf8_general_ci',
+	`Usuario` VARCHAR(30) NOT NULL COLLATE 'utf8_general_ci',
+	`Clave` VARCHAR(2000) NOT NULL COLLATE 'utf8_general_ci',
+	`IdPerfil` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppId` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`AppVersion` VARCHAR(25) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`PcHost` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`UsuarioCreo` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`FechaCreo` DATETIME NULL DEFAULT NULL,
+	`FechaElimino` DATETIME NULL DEFAULT NULL,
+	`UsuarioElimino` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8_general_ci',
+	`Token` VARCHAR(300) NULL DEFAULT '1' COLLATE 'utf8_general_ci',
+	`Activo` BIT(1) NULL DEFAULT b'1',
+	PRIMARY KEY (`Id`) USING BTREE,
+	UNIQUE INDEX `Usuario` (`Usuario`, `Activo`) USING BTREE,
+	INDEX `FK_Perfil` (`IdPerfil`) USING BTREE,
+	CONSTRAINT `FK_Perfil` FOREIGN KEY (`IdPerfil`) REFERENCES `mk_admin`.`perfil_sistema` (`Id`) ON UPDATE RESTRICT ON DELETE RESTRICT
+)
+COMMENT='Usuarios del sistema : mVHy12nTdRpwD45wcP7F7oUJs9RBvs+srMw466Ui3wHQ=k'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+ROW_FORMAT=DYNAMIC
+;</value>
+  </data>
+  <data name="usuario_sistema_data" xml:space="preserve">
+    <value>REPLACE INTO `usuario_sistema` (`Id`, `Nombre`, `Apellido`, `Usuario`, `Clave`, `IdPerfil`, `AppId`, `AppVersion`, `PcHost`, `UsuarioCreo`, `FechaCreo`, `FechaElimino`, `UsuarioElimino`, `Token`, `Activo`) VALUES
+	('0', 'Administrador', 'de Sistema', 'ADMIN', 'VHy12nTdRpwD45wcP7F7oUJs9RBvs+srMw466Ui3wHQ=', '20190626_224822_0747', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1', b'1');</value>
+  </data>
+</root>
