@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C789C6B-6843-471F-A2C5-BA20EB682641}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mk_management.hotspot</RootNamespace>
+    <AssemblyName>mk_management.hotspot</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.UI, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v18.1, Version=18.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAccionesDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccionesDispositivo.Designer.cs">
+      <DependentUpon>frmAccionesDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAgregarPerfil.Designer.cs">
+      <DependentUpon>frmAgregarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmAgregarUsuario.Designer.cs">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Link.cs" />
+    <Compile Include="MK.cs" />
+    <Compile Include="Model\ServerInfo.cs" />
+    <Compile Include="ucDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDashBoard.Designer.cs">
+      <DependentUpon>ucDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDashBoard_frm_infoDev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ucDashBoard_frm_infoDev.Designer.cs">
+      <DependentUpon>ucDashBoard_frm_infoDev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaDispositivos_gv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaDispositivos_gv.Designer.cs">
+      <DependentUpon>ucListaDispositivos_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaDispositivos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaDispositivos.Designer.cs">
+      <DependentUpon>ucListaDispositivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaPerfiles_Router.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaPerfiles_Router.Designer.cs">
+      <DependentUpon>ucListaPerfiles_Router.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaPerfiles_Hist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaPerfiles_Hist.Designer.cs">
+      <DependentUpon>ucListaPerfiles_Hist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaUsuarios_Hist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaUsuarios_Hist.Designer.cs">
+      <DependentUpon>ucListaUsuarios_Hist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaUsuarios_Router.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaUsuarios_Router.Designer.cs">
+      <DependentUpon>ucListaUsuarios_Router.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmAgregarDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarDispositivo.Designer.cs">
+      <DependentUpon>frmAgregarDispositivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uc_formato_rpt_credenciales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uc_formato_rpt_credenciales.Designer.cs">
+      <DependentUpon>uc_formato_rpt_credenciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccionesDispositivo_Cookies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccionesDispositivo_Cookies.Designer.cs">
+      <DependentUpon>frmAccionesDispositivo_Cookies.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAccionesDispositivo.resx">
+      <DependentUpon>frmAccionesDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccionesDispositivo_Cookies.resx">
+      <DependentUpon>frmAccionesDispositivo_Cookies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarPerfil.resx">
+      <DependentUpon>frmAgregarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDashBoard.resx">
+      <DependentUpon>ucDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDashBoard_frm_infoDev.resx">
+      <DependentUpon>ucDashBoard_frm_infoDev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaDispositivos_gv.resx">
+      <DependentUpon>ucListaDispositivos_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaDispositivos.resx">
+      <DependentUpon>ucListaDispositivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaPerfiles_Router.resx">
+      <DependentUpon>ucListaPerfiles_Router.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaPerfiles_Hist.resx">
+      <DependentUpon>ucListaPerfiles_Hist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaUsuarios_Hist.resx">
+      <DependentUpon>ucListaUsuarios_Hist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaUsuarios_Router.resx">
+      <DependentUpon>ucListaUsuarios_Router.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmAgregarDispositivo.resx">
+      <DependentUpon>frmAgregarDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uc_formato_rpt_credenciales.resx">
+      <DependentUpon>uc_formato_rpt_credenciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\drive.svg" />
+    <None Include="Resources\pcu.svg" />
+    <None Include="Resources\time.svg" />
+    <None Include="Resources\user2.svg" />
+    <None Include="Resources\user3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mk_management.common\mk_management.common.csproj">
+      <Project>{0b24a18d-1a92-45ef-b06a-f686df47c190}</Project>
+      <Name>mk_management.common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mikro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chip.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
