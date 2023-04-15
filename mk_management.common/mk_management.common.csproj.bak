@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B24A18D-1A92-45EF-B06A-F686DF47C190}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>mk_management.common</RootNamespace>
+    <AssemblyName>mk_management.common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>media\net_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="AltoHttp, Version=1.0.7813.41648, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AltoHttp.1.5.1\lib\net45\AltoHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Markdig, Version=0.26.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Markdig.0.26.0\lib\net452\Markdig.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\mk_management\Libs\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\mk_management\Libs\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Apariencia.cs" />
+    <Compile Include="BDD_RESX.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDD_RESX.resx</DependentUpon>
+    </Compile>
+    <Compile Include="BDD_RPT_FORMAT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDD_RPT_FORMAT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationSetting.cs" />
+    <Compile Include="CrossCrypto.cs" />
+    <Compile Include="CustomOverlayPainter.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="Crypto.cs" />
+    <Compile Include="DownloadService.cs" />
+    <Compile Include="enumConfig.cs" />
+    <Compile Include="FingerPrint.cs" />
+    <Compile Include="frmActivate_OnLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivate_OnLine.Designer.cs">
+      <DependentUpon>frmActivate_OnLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivate_Offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivate_Offline.Designer.cs">
+      <DependentUpon>frmActivate_Offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarUsuarioSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarUsuarioSistema.Designer.cs">
+      <DependentUpon>frmAgregarUsuarioSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAppChangeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAppChangeLog.Designer.cs">
+      <DependentUpon>FrmAppChangeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppSetting.Designer.cs">
+      <DependentUpon>frmAppSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrearBdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrearBdd.Designer.cs">
+      <DependentUpon>frmCrearBdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDownloadTemplates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDownloadTemplates.Designer.cs">
+      <DependentUpon>FrmDownloadTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItemGridViews.cs" />
+    <Compile Include="tasks\UpdateAvailable.cs" />
+    <Compile Include="ucActualizaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucActualizaciones.Designer.cs">
+      <DependentUpon>ucActualizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucInfoApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucInfoApp.Designer.cs">
+      <DependentUpon>ucInfoApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSetting.Designer.cs">
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Link.cs" />
+    <Compile Include="MDB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rpt\frmCongrats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt\frmCongrats.Designer.cs">
+      <DependentUpon>frmCongrats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\frmPricing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt\frmPricing.Designer.cs">
+      <DependentUpon>frmPricing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\frm_rpt_designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt\frm_rpt_designer.Designer.cs">
+      <DependentUpon>frm_rpt_designer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmActivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivate.Designer.cs">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucInfoComp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucInfoComp.Designer.cs">
+      <DependentUpon>ucInfoComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucListaUsuariosSistema.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucListaUsuariosSistema.Designer.cs">
+      <DependentUpon>ucListaUsuariosSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAppSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAppSetting.Designer.cs">
+      <DependentUpon>ucAppSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilerias.cs" />
+    <Compile Include="wOverlaySplash.cs" />
+    <EmbeddedResource Include="BDD_RESX.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BDD_RESX.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDD_RPT_FORMAT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BDD_RPT_FORMAT.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivate_OnLine.resx">
+      <DependentUpon>frmActivate_OnLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivate_Offline.resx">
+      <DependentUpon>frmActivate_Offline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarUsuarioSistema.resx">
+      <DependentUpon>frmAgregarUsuarioSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAppChangeLog.resx">
+      <DependentUpon>FrmAppChangeLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppSetting.resx">
+      <DependentUpon>frmAppSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrearBdd.resx">
+      <DependentUpon>frmCrearBdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDownloadTemplates.resx">
+      <DependentUpon>FrmDownloadTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucActualizaciones.resx">
+      <DependentUpon>ucActualizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInfoApp.resx">
+      <DependentUpon>ucInfoApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSetting.resx">
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rpt\frmCongrats.resx">
+      <DependentUpon>frmCongrats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\frmPricing.resx">
+      <DependentUpon>frmPricing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\frm_rpt_designer.resx">
+      <DependentUpon>frm_rpt_designer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmActivate.resx">
+      <DependentUpon>frmActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucInfoComp.resx">
+      <DependentUpon>ucInfoComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucListaUsuariosSistema.resx">
+      <DependentUpon>ucListaUsuariosSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAppSetting.resx">
+      <DependentUpon>ucAppSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\database.svg" />
+    <None Include="Resources\database2.svg" />
+    <None Include="Resources\drive.svg" />
+    <None Include="Resources\network.svg" />
+    <None Include="Resources\pcu.svg" />
+    <None Include="Resources\print1.svg" />
+    <None Include="Resources\print2.svg" />
+    <None Include="Resources\profile.svg" />
+    <None Include="Resources\time.svg" />
+    <None Include="Resources\user.svg" />
+    <None Include="Resources\user2.svg" />
+    <None Include="Resources\user3.svg" />
+    <None Include="Resources\wifi1.svg" />
+    <None Include="Resources\wifi2.svg" />
+    <None Include="Resources\wifi3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\icon_app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\net_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\net_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\upgrade.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\close.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\growits_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\flashnethn_logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\growits_logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
