@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+                                    <configuration>
+                                        <appSettings>
+                                        <add key="J4Rc6BfjeeTg2ZDdsJ2VIrWOPzT29ZDBh9K4Jc+aqC4=" value="KCDUO4mQyIIe+h+9Kg98sFhlLNFwGaoGQqZ0BibMsyNUwmIA75y3YQXo3pM+h4EezN806ERkttwrvzvc2emoTK42/Uva020W2wCxK6OlLZi+jv3fyZwmJh4vWm1O2A4sZPGLZ3iEvvtDB8e5jwoSOkLQWh+m8DCp8dqBtX3Ech5og5+rifw3LdHXIIoGj4RWp67OpMx4jRtuaaBTWwktWsj1ckJIt5soYzE8wvEjnk/XNmqjTidox8KS9tqymAcYD+jZhD+TLMM6A3A9v/ieHtPTMgfoDeiUyk2cuPjqmbQ=" />
+<add key="ZBfBrk6vhLpuDXVD6dSlke6yId32ZWd/JII5lScGLtg=" value="kz0JyQNuCqBMRsA/iqXJOCnrtYboFANabM7Ij7SI9trrIY9bIHNw0XbZem2i+Rfp" />
+<add key="Autoconectar" value="S" />
+
+                                        </appSettings>
+                                    </configuration>
